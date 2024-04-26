@@ -2,32 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(19, 19, 19);
+  background-color: rgb(229, 246, 246);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.customOverlay {
+  background: rgba(17, 81, 78, 0.163) !important;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+}
+
+.customModal {
+  background: #b2dbbf;
+  width: 90%;
+  margin: 0 !important;
+  border-radius: 10px;
+}
+
+.react-responsive-modal-closeButton {
+  width: 20px;
 }
